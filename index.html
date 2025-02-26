@@ -76,8 +76,7 @@
 
         .right-1 {
             width: 19vw;
-            height: 300vh;
-            /* position: relative; */
+            height: 300vh;           /* position: relative; */
 
             cursor: pointer;
         }
@@ -93,16 +92,17 @@
 
         .lefttwo {
             width: 100%;
-            height: 90px;
+            height: auto;
             background-color: white;
             border-radius: 10px;
             border: 1px solid gray;
             margin: 20px 0;
+            
         }
 
-        .leftfour {
+        .leftthree {
             width: 100%;
-            height: 90px;
+            height: auto;
             background-color: white;
             border-radius: 10px;
             border: 1px solid gray;
@@ -114,13 +114,15 @@
 
 
 
-        .leftthree {
+        .leftfour {
             width: 100%;
-            height: 150px;
+            height: auto;
             background-color: white;
             border-radius: 10px;
             border: 1px solid gray;
             margin: 20px 0;
+            padding-left: 20px;
+           
         }
 
         .midone {
@@ -204,7 +206,8 @@
             }
 
             .right-1 {
-                width: 63vw;
+                /* width: 63vw; */
+                display: none;
             }
 
             .input {
@@ -242,7 +245,8 @@
             .mid-1 {
                 width: 80vw;
             }
-            
+           
+           
         }
 
         .banner {
@@ -290,50 +294,59 @@
 
         .connect {
             font-size: 15px;
-            margin-left: 15px;
+            margin-left: 10px;
             margin-top: 15px;
         }
 
         .no {
             font-size: 15px;
-            margin-left: 155px;
-            margin-top: 15px;
+             margin-left: 135px;
+            margin-top: 10px;
             display: flex;
-            justify-content: center;
-            color: rgb(13, 146, 146);
+           /* margin-right: 15px; */
+           
+        }
+        .dno{
+            font-size: 15px;
+            margin-left: 120px;
+            display: flex;
+            /* margin-top: 5px; */
         }
 
         .down {
             font-size: 15px;
-            margin-left: 15px;
+            margin-left: 10px;
         }
 
         .p {
             font-size: 15px;
             margin-left: 15px;
             margin-top: 15px;
+            
         }
 
         .saved {
             font-size: 15px;
             margin-top: 15px;
             display: flex;
-            justify-content: space-around;
+            justify-content: start;
+            gap: 25px;
         }
 
         .group {
             font-size: 15px;
             margin-top: 15px;
             display: flex;
-            justify-content: space-around;
+            justify-content:start;
+            gap: 25px;
         }
 
         .event {
             font-size: 15px;
             margin-top: 10px;
-
+            gap: 25px;
             display: flex;
-            justify-content: space-around;
+            justify-content: start;
         }
 
         .midi {
@@ -356,6 +369,7 @@
             display: flex;
             gap: 10px;
             margin-top: 5px;
+             cursor: pointer; 
         }
 
         .midsecond {
@@ -453,12 +467,14 @@
             justify-content: space-evenly;
             /* margin-bottom: 5px; */
             /* margin-top: 5px; */
+            cursor: pointer;
 
         }
 
         .reactions {
             display: flex;
             justify-content: space-between;
+            cursor: pointer;
         }
 
         .right {
@@ -509,6 +525,10 @@
 
         .pad:hover {
             background-color: rgb(215, 216, 218);
+        }
+        .tryp{
+            margin-left: 20px;
+            gap:15px;
         }
     </style>
 </head>
@@ -588,26 +608,31 @@
                 </div>
             </div>
             <div class="lefttwo">
-                <div class="d-flex">
-                    <h1 class="connect">Connections</h1>
-                    <p class="no">55</p>
+                <div class="d-flex justify-content-space-evenly">
+                    <h1 class="connect">Profile Viewers</h1>
+                    <h1 class="no">57</h1>
                 </div>
-                <p class="down">Connect with alumini</p>
+                <div class="d-flex justify-content-space-evenly">
+                    <h1 class="down">Post impressions</h1>
+                <h1 class="dno">790</h1>
+                </div>
             </div>
-            <div class="leftfour">
-                <p class="p">Earn professional certificates with premium</p>
-            </div>
-
-
             <div class="leftthree">
+                <p class="p">learn from 21k+ expert-led courses</p>
+                <div class="d-flex tryp"><i class="fa-solid fa-square"  style="color: #FFD43B;"></i>
+                    <h1 class="fs-6 ">Try premium for <i class="fa-solid fa-indian-rupee-sign"></i>0</h1></div>
+            </div>
+
+
+            <div class="leftfour">
                 <div class="saved"><i class="fa-solid fa-bookmark"></i>
-                    <p>Saved Items</p>
+                    <h1 class="fs-6">Saved Items</h1>
                 </div>
                 <div class="group"><i class="fa-solid fa-people-group"></i>
-                    <p>Groups</p>
+                    <h1 class="fs-6">Groups</h1>
                 </div>
                 <div class="event"><i class="fa-solid fa-calendar"></i>
-                    <p>Events</p>
+                    <h1 class="fs-6">Events</h1>
                 </div>
             </div>
 
@@ -618,7 +643,7 @@
 
                     <img src="midprofile.png" class="midi" alt="">
 
-                    <button class="btn">Start a post</button>
+                    <button class="btn justify-content-start">Start a post</button>
 
 
 
