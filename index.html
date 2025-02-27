@@ -60,7 +60,7 @@
 
         .left-1 {
             width: 19vw;
-            height: auto;
+            min-height: auto;
             cursor: pointer;
 
         }
@@ -206,8 +206,8 @@
             }
 
             .right-1 {
-                /* width: 63vw; */
-                display: none;
+             /* width: 63vw; */
+                 display: none; 
             }
 
             .input {
@@ -235,15 +235,25 @@
 
         @media(max-width:800px) {
             .right-1 {
-                display: none;
+             /* width:800px; */
+             display: none;
             }
 
             .left-1 {
-                display: none;
+                /* display: none; */
+                width:800px
+            
+            }
+            .snist{
+               height:10px;
             }
 
             .mid-1 {
-                width: 80vw;
+                display: none;
+            }
+            .right{
+                /* width:100%; */
+                gap: 1px;
             }
            
            
@@ -290,6 +300,7 @@
             bottom: 50px;
             font-size: 12px;
             font-weight: 50px;
+            margin-bottom: 5px;
         }
 
         .connect {
@@ -501,13 +512,13 @@
             transition: 0.4s;
         }
 
-        .gapss {
+        .bug {
             font-size: 15px;
             font-weight: 600;
             margin-bottom: -5px;
         }
 
-        .gapssp2 {
+        .bug2 {
             font-size: 13px;
         }
 
@@ -536,7 +547,7 @@
 <body>
     <nav class=" d-flex  justify-content-around align-items-center">
         <div class="left d-flex  justify-content-center align-items-center gap-3">
-            <img src="logo.png" height="50px" alt="">
+            <img src="logo.png"  height="30px" alt="">
             <div class="input">
                 <div class="input-group flex-wrap justify-content-center mt-2">
                     <span class="input-group-text" id="addon-wrapping"><i
@@ -602,7 +613,7 @@
                 <h1 class="name">Sruthi Gaddam</h1>
                 <h6 class="clg">Student at Sreenidhi Institute of Science and Technology</h6>
                 <p class="locate">Hyderabad, Telangana, India</p>
-                <div class="d-flex snist gap-2">
+                <div class="d-flex snist gap-2 ">
                     <img src="snist.png" width="30px" alt="">
                     <p> Sreenidhi Institute of Science and Technology</p>
                 </div>
@@ -808,32 +819,32 @@
                 <div class="d-flex justify-content-start align-items-start pad ">
                     <img src="tango.png" class="px-1 mx-2 righttwonrml " width="33px" height="33px">
                     <div class="d-flex justify-content-start align-items-start flex-column px-1">
-                        <p class=" gapss">Tango</p>
-                        <p class="gapssp2">Harmonize the grid</p>
+                        <p class=" bug">Tango</p>
+                        <p class="bug2">Harmonize the grid</p>
                     </div>
                     <i class=" itag fa-solid fa-caret-right fs-2"></i>
                 </div>
                 <div class="d-flex justify-content-start align-items-start pad ">
                     <img src="queens.png" class="px-1 mx-2 righttwonrml " width="33px" height="33px">
                     <div class="d-flex justify-content-start align-items-start flex-column px-1">
-                        <p class=" gapss">Queens</p>
-                        <p class="gapssp2">Crown each region</p>
+                        <p class=" bug">Queens</p>
+                        <p class="bug2">Crown each region</p>
                     </div>
                     <i class=" itag fa-solid fa-caret-right fs-2"></i>
                 </div>
                 <div class="d-flex justify-content-start align-items-start pad ">
                     <img src="pinpoint.png" class="px-1 mx-2 righttwonrml " width="33px" height="33px">
                     <div class="d-flex justify-content-start align-items-start flex-column px-1">
-                        <p class=" gapss">Pinpoint</p>
-                        <p class="gapssp2">Guess the category</p>
+                        <p class=" bug">Pinpoint</p>
+                        <p class="bug2">Guess the category</p>
                     </div>
                     <i class=" itag fa-solid fa-caret-right fs-2"></i>
                 </div>
                 <div class="d-flex justify-content-start align-items-start pad ">
                     <img src="crossclimb.png" class="px-1 mx-2 righttwonrml " width="33px" height="33px">
                     <div class="d-flex justify-content-start align-items-start flex-column px-1">
-                        <p class=" gapss">Crossclimb</p>
-                        <p class="gapssp2">Unlock trivia ladder</p>
+                        <p class=" bug">Crossclimb</p>
+                        <p class="bug2">Unlock trivia ladder</p>
                     </div>
                     <i class=" itag fa-solid fa-caret-right fs-2"></i>
                 </div>
